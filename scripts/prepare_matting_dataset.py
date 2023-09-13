@@ -110,7 +110,7 @@ def main():
 
     # Load config
     config.load(args.config)
-
+    logger.info('pseudo_alpha: %s', args.pseudo_alpha)
     if args.pseudo_alpha:
         logger.info('Compute pseudo alpha images')
         # Get valid names in 6 channel segmentation stage

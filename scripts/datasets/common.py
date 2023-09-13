@@ -46,6 +46,9 @@ def get_valid_names(*dirs, rm_exts=None):
     # Reduce
     def _join_and(a, b):
         return a & b
+    
+    #print all data from name_sets
+    #logger.info('name_sets: %s', name_sets)
 
     valid_names = functools.reduce(_join_and, name_sets)
     if len(valid_names) == 0:

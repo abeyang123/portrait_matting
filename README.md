@@ -39,11 +39,13 @@ $ python scripts/prepare_seg_dataset.py
 # Generate mean masks and grids.
 $ python scripts/prepare_seg_plus_dataset.py
 
+# Computes loss weight matrixs. (extra alpha mask are needed)
+$ python scripts/prepare_matting_dataset.py --pseudo_alpha
+
 # Generate trimaps from alpha masks. (extra alpha mask are needed)
 $ python scripts/prepare_seg_tri_dataset.py
 
-# Computes loss weight matrixs. (extra alpha mask are needed)
-$ python scripts/prepare_matting_dataset.py
+
 ```
 
 ### Training ###

@@ -69,7 +69,12 @@ def main():
 
     # Load config
     config.load(args.config)
-
+    #print all data from config
+    logger.info('config.img_crop_dir: %s', config.img_crop_dir)
+    logger.info('config.img_mask_dir: %s', config.img_mask_dir)
+    logger.info('config.img_mean_mask_dir: %s', config.img_mean_mask_dir)
+    logger.info('config.img_mean_grid_dir: %s', config.img_mean_grid_dir)
+    logger.info('config.img_alpha_dir: %s', config.img_alpha_dir)
     # Get valid names for alpha matting
     names = get_valid_names(config.img_crop_dir, config.img_mask_dir,
                             config.img_mean_mask_dir, config.img_mean_grid_dir,
